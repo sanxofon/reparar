@@ -1,37 +1,66 @@
-## Welcome to GitHub Pages
+##  REPARAR, extendamos la vida útil de las cosas
 
-You can use the [editor on GitHub](https://github.com/sanxofon/reparar/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+**Descripción:** Imágenes panorámicas 360 interactivas en Web (PHP/HTML/JS/CSS).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Requerimientos desde diseño:** Imagen de fondo y elementos interactivos dentro de cada escena (imagen/audio/video/enlaces)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Análisis de librerías y servicios relacionados
 
-```markdown
-Syntax highlighted code block
+#### Software pago:
+	https://www.theasys.io/samples/ 20-24 USD / mes
+	https://www.momento360.com/	5-6 USD / mes
+	https://kuula.co/	16-20 USD / mes
+	https://panoraven.com/	15-19 USD / mes
+	https://360player.io/	11-12 USD / mes
 
-# Header 1
-## Header 2
-### Header 3
+Ninguno me pareció suficientemente bueno como para que valga la pena pagar por ellos. Más bien me parecieron más simples que lo que se puede lograr con algunos de código abierto.
 
-- Bulleted
-- List
+#### Software abierto:
 
-1. Numbered
-2. List
+##### 360 Image Viewer
+	http://360-image-viewer-test.surge.sh/
+	https://github.com/Jam3/360-image-viewer
 
-**Bold** and _Italic_ and `Code` text
+##### Photo Sphere Viewer
+	https://photo-sphere-viewer.js.org/
+	https://jsfiddle.net/mistic100/5r684etx/
+	https://github.com/mistic100/Photo-Sphere-Viewer
 
-[Link](url) and ![Image](src)
-```
+##### Pannellum
+	https://pannellum.org
+	https://pannellum.org/documentation/examples/hot-spots/
+	https://pannellum.org/documentation/examples/tour/
+	https://github.com/mpetroff/pannellum
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+##### PanoViewer
+	https://naver.github.io/egjs-view360/panoviewer.html
+	https://naver.github.io/egjs-view360/examples/panoviewer/etc/hotspot.html
+	https://naver.github.io/egjs-view360/panoviewer.html#projections
+	https://github.com/naver/egjs-view360
 
-### Jekyll Themes
+##### A-Frame
+	https://aframe.io/
+	https://aframe.io/examples/showcase/
+	https://aframe.io/examples/showcase/sky/
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sanxofon/reparar/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+##### Marzipano
+	https://www.marzipano.net/
+	https://www.marzipano.net/demos.html
+	https://www.marzipano.net/tool/
+	https://www.marzipano.net/demos/hotspot-styles/
+	https://www.marzipano.net/demos/embedded-hotspots/
+	https://www.marzipano.net/demos/transitions/
+	https://www.marzipano.net/demos/layer-effects/
+	https://www.marzipano.net/demos/cube-generated/
+	https://github.com/google/marzipano
 
-### Support or Contact
+##### Panolens.js
+	https://pchen66.github.io/Panolens/
+	https://pchen66.github.io/Panolens/#Example
+	https://pchen66.github.io/Panolens/examples/panorama_storytelling.html
+	https://pchen66.github.io/Panolens/examples/panorama_interactive.html
+	https://codepen.io/pchen66/pen/dRYNNG
+	https://github.com/pchen66/panolens.js
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Mis opciones favoritas son Marzipano y Panolens.js
