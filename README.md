@@ -68,4 +68,11 @@ Ninguno me pareció suficientemente bueno como para que valga la pena pagar por 
 	https://codepen.io/pchen66/pen/dRYNNG
 	https://github.com/pchen66/panolens.js
 
-Mis opciones favoritas son Marzipano y Panolens.js
+Mis opciones favoritas son **Marzipano** y **Panolens.js**
+
+Para testear rápido una imagen en la proyección encontré:
+	http://panoramaviewer.1bestlink.net/
+	https://www.marzipano.net/tool/
+	https://360toolkit.co/
+
+Esta última también es una herramienta para convertir **Cubemap** <=> **Equirectangular**
