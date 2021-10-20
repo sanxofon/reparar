@@ -8,7 +8,10 @@ Los datos se subirán al repositorio en GitHub:
  - https://github.com/sanxofon/reparar/
 
 La imagen de prueba está en línea acá:
- - https://sanxofon.github.io/reparar/escenario%202-david.jpg
+ - https://sanxofon.github.io/reparar/escenario%202-david.jpghttps://codepen.io/sanxofon/full/qBXNyNa
+
+Una primera versión de prueba (Panolens.js) está acá:
+ - https://codepen.io/sanxofon/full/qBXNyNa
 
 ### Análisis de librerías y servicios relacionados
 
