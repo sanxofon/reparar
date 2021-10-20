@@ -71,7 +71,7 @@ Ninguno me pareció suficientemente bueno como para que valga la pena pagar por 
 
 Mis opciones favoritas son **Marzipano** y **Panolens.js**
 
-##### Testeo
+#### Testeo
 Para testear rápido una imagen en la proyección encontré:
 
  - http://panoramaviewer.1bestlink.net/
@@ -79,3 +79,13 @@ Para testear rápido una imagen en la proyección encontré:
  - https://360toolkit.co/
 
 Esta última también es una herramienta para convertir **Cubemap** <=> **Equirectangular**
+
+##### Hugin
+Otra herramienta interesantes es **Hugin**:
+ - https://sourceforge.net/projects/hugin/files/hugin/
+
+Las instrucciones están poc acá:
+ - https://www.cs.umd.edu/hcil/ARDN/HuginAdjusts/
+
+ La versión para Windows se puede descargar acá:
+  - https://sourceforge.net/projects/hugin/files/hugin/hugin-2016.0/
