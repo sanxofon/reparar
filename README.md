@@ -13,14 +13,18 @@ La imagen de prueba está en línea acá:
 Una primera versión de prueba (Panolens.js) está acá:
  - https://codepen.io/sanxofon/full/qBXNyNa
 
+La carpeta en GDrive se puede accesar acá:
+
+    drive.google.com/drive/folders/1rTLXGpiZ0Zta5F8fQbAQj57p93fDhPK_?usp=sharing
+
 ### Análisis de librerías y servicios relacionados
 
 #### Software pago:
  - https://www.theasys.io/samples/ 20-24 USD / mes
- - https://www.momento360.com/	5-6 USD / mes
- - https://kuula.co/	16-20 USD / mes
- - https://panoraven.com/	15-19 USD / mes
- - https://360player.io/	11-12 USD / mes
+ - https://www.momento360.com/  5-6 USD / mes
+ - https://kuula.co/    16-20 USD / mes
+ - https://panoraven.com/   15-19 USD / mes
+ - https://360player.io/    11-12 USD / mes
 
 Ninguno me pareció suficientemente bueno como para que valga la pena pagar por ellos. Más bien me parecieron más simples que lo que se puede lograr con algunos de código abierto.
 
