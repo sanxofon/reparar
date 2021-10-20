@@ -15,8 +15,8 @@ Una primera versión de prueba (Panolens.js) está acá:
 
 La carpeta en GDrive y el documento GDocs se pueden accesar acá:
 
-    drive.google.com/drive/folders/1rTLXGpiZ0Zta5F8fQbAQj57p93fDhPK_?usp=sharing
-    docs.google.com/document/d/1jektWKxsRtS_qN8NguuWhu2Rrr_bRBiAewd75myPH8I/edit?usp=sharing
+    drive.google.com/drive/folders/1rTLXGpiZ0Zta5F8fQbAQj57p93fDhPK_
+    docs.google.com/document/d/1jektWKxsRtS_qN8NguuWhu2Rrr_bRBiAewd75myPH8I
 
 ### Análisis de librerías y servicios relacionados
 
