@@ -4,6 +4,11 @@
 
 **Requerimientos desde diseño:** Imagen de fondo y elementos interactivos dentro de cada escena (imagen/audio/video/enlaces)
 
+Los datos se subirán al repositorio en GitHub:
+	https://github.com/sanxofon/reparar/
+
+La imagen de prueba está en línea acá:
+	https://sanxofon.github.io/reparar/escenario%202-david.jpg
 
 ### Análisis de librerías y servicios relacionados
 
