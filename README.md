@@ -79,7 +79,18 @@ Ninguno me pareció suficientemente bueno como para que valga la pena pagar por 
 
 Mis opciones favoritas son **Marzipano** y **Panolens.js**
 
-#### Testeo
+#### Imágenes equirectangulares y cubemaps
+
+##### Equirectangular
+
+![Grid de equirectangular](https://github.com/sanxofon/reparar/blob/main/Equirectangular-Grid-1849x948.jpg?raw=true)
+
+##### Cubemap
+
+![Ejemplo de Cubremap](https://github.com/sanxofon/reparar/blob/main/cubemap-example-1.jpg?raw=true)
+
+#### Herramientas en línea para ayudar al diseño
+
 Para testear rápido una imagen en la proyección encontré:
 
  - http://panoramaviewer.1bestlink.net/
@@ -89,6 +100,22 @@ Para testear rápido una imagen en la proyección encontré:
 Esta última también es una herramienta para convertir **Cubemap** <=> **Equirectangular**
  - https://graphicdesign.stackexchange.com/questions/84774/how-to-convert-a-normal-photo-into-an-equirectangular-image
 
+Herramienta para convertir de Panorama a Cubemap:
+ - https://jaxry.github.io/panorama-to-cubemap/
+
+Otra similar:
+ - https://jonaszeitler.se/cubemap-toastmap-generator/
+
+Otra página con un conversor similar (pero de HDRI a Cubemap):
+ - https://matheowis.github.io/HDRI-to-CubeMap/
+
+Y otra que convierte de Equirectangular a Cubemap:
+ - https://github.com/ostef/cubemap-generator
+
+##### Tutoriales sobre diseño en 360:
+Más sobre cómo hacer imágenes equirectangulares:
+ - https://dmswart.com/2016/06/28/drawing-a-panorama/
+ - http://vovakurbatov.com/articles/easy-way-to-make-360-vr-designs
 
 ##### Hugin
 Otra herramienta interesantes es **Hugin**:
@@ -100,8 +127,3 @@ Las instrucciones están por acá:
 
  La versión para Windows se puede descargar acá:
   - https://sourceforge.net/projects/hugin/files/hugin/hugin-2016.0/
-
-
-Más sobre cómo hacer imágenes equirectangulares:
- - https://dmswart.com/2016/06/28/drawing-a-panorama/
- - http://vovakurbatov.com/articles/easy-way-to-make-360-vr-designs
