@@ -112,11 +112,6 @@ Otra página con un conversor similar (pero de HDRI a Cubemap):
 Y otra que convierte de Equirectangular a Cubemap:
  - https://github.com/ostef/cubemap-generator
 
-##### Tutoriales sobre diseño en 360:
-Más sobre cómo hacer imágenes equirectangulares:
- - https://dmswart.com/2016/06/28/drawing-a-panorama/
- - http://vovakurbatov.com/articles/easy-way-to-make-360-vr-designs
-
 ##### Hugin
 Otra herramienta interesantes es **Hugin**:
  - http://hugin.sourceforge.net/tutorials/enfuse-360/en.shtml
@@ -127,3 +122,8 @@ Las instrucciones están por acá:
 
  La versión para Windows se puede descargar acá:
   - https://sourceforge.net/projects/hugin/files/hugin/hugin-2016.0/
+
+#### Tutoriales sobre diseño en 360:
+Más sobre cómo hacer imágenes equirectangulares:
+ - https://dmswart.com/2016/06/28/drawing-a-panorama/
+ - http://vovakurbatov.com/articles/easy-way-to-make-360-vr-designs
