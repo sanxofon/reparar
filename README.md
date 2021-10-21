@@ -87,12 +87,15 @@ Para testear rápido una imagen en la proyección encontré:
  - https://360toolkit.co/
 
 Esta última también es una herramienta para convertir **Cubemap** <=> **Equirectangular**
+ - https://graphicdesign.stackexchange.com/questions/84774/how-to-convert-a-normal-photo-into-an-equirectangular-image
+
 
 ##### Hugin
 Otra herramienta interesantes es **Hugin**:
+ - http://hugin.sourceforge.net/tutorials/enfuse-360/en.shtml
  - https://sourceforge.net/projects/hugin/files/hugin/
 
-Las instrucciones están poc acá:
+Las instrucciones están por acá:
  - https://www.cs.umd.edu/hcil/ARDN/HuginAdjusts/
 
  La versión para Windows se puede descargar acá:
@@ -101,3 +104,4 @@ Las instrucciones están poc acá:
 
 Más sobre cómo hacer imágenes equirectangulares:
  - https://dmswart.com/2016/06/28/drawing-a-panorama/
+ - http://vovakurbatov.com/articles/easy-way-to-make-360-vr-designs
