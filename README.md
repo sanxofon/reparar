@@ -112,6 +112,11 @@ Otra página con un conversor similar (pero de HDRI a Cubemap):
 Y otra que convierte de Equirectangular a Cubemap:
  - [https://github.com/ostef/cubemap-generator](https://github.com/ostef/cubemap-generator)
 
+##### Eq A Sketch 360
+Hay un programa para dibujar equirectangulares que habría que probar:
+ - Software para descargar: [http://www.univ-ab.pt/~aaraujo/eqasketch360.html](http://www.univ-ab.pt/~aaraujo/eqasketch360.html)
+ - Video explicativo: [https://www.youtube.com/watch?v=EHyhbnb6wXg](https://www.youtube.com/watch?v=EHyhbnb6wXg)
+
 ##### Hugin
 Otra herramienta interesantes es **Hugin**:
  - [http://hugin.sourceforge.net/tutorials/enfuse-360/en.shtml](http://hugin.sourceforge.net/tutorials/enfuse-360/en.shtml)
