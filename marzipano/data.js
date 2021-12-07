@@ -41,8 +41,8 @@ var APP_DATA = {
           "pitch": -0.3,
           "title": "-0.9, 0.3<br>",
           "text": "Posición marcada para referencia.<br>",
-          "image": "azotea.png",
-          "class": "azotea"
+          "image": "mancha-texto-esbonito.png",
+          "class": "mancha-texto-esbonito"
         }
       ]
     }
