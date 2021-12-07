@@ -26,7 +26,7 @@ infospot.addEventListener( "click", function(){
 // Custom infospot
 infospot2 = new PANOLENS.Infospot( 
   600, 
-  "mancha-texto-esbonito.png", false
+  "mancha-esbonito.png", false
 );
 
 infospot2.material.rotation = 30 * Math.PI / 180;
