@@ -30,23 +30,22 @@
       textureLoader = new THREE.TextureLoader();
       tex1 = textureLoader.load( 'mancha-texto-esbonito.png' );
       tex2 = textureLoader.load( 'mancha-esbonito.png' );
-      /*const path = './';
-      const format = '.jpg';
+      /*
       panorama = new PANOLENS.CubePanorama( [
-          path + 'pax' + format, path + 'nax' + format,
-          path + 'pay' + format, path + 'nay' + format,
-          path + 'paz' + format, path + 'naz' + format
+          'pax.jpg', 'nax.jpg',
+          'pay.jpg', 'nay.jpg',
+          'paz.jpg', 'naz.jpg'
       ] );//*/
 
       // panorama = new PANOLENS.ImagePanorama('escenario 2-david.jpg' );
       // panorama = new PANOLENS.ImagePanorama('escenario 2-david (1).jpg' );
       // panorama = new PANOLENS.ImagePanorama('Equirectangular.png');
-      // panorama = new PANOLENS.ImagePanorama('Equirectangular-Grid-1024x512.png');
-      panorama = new PANOLENS.ImagePanorama('equirectangular_guide.jpg');
+      panorama = new PANOLENS.ImagePanorama('Equirectangular-Grid-1024x512.png');
+      // panorama = new PANOLENS.ImagePanorama('equirectangular_guide.jpg');
       // panorama.link( panorama2, new THREE.Vector3( -807.50, 604.88, -5000.00 ) );
 
 // Default infospot
-infospot = new PANOLENS.Infospot( 
+var infospot = new PANOLENS.Infospot( 
   1000, 
   "mancha-texto-esbonito.png"
 );
@@ -58,7 +57,7 @@ infospot.addEventListener( "click", function(){
 } );
 
 // Custom infospot
-infospot2 = new PANOLENS.Infospot( 
+var infospot2 = new PANOLENS.Infospot( 
   1000, 
   "mancha-esbonito.png", false
 );
@@ -88,6 +87,30 @@ panorama.add( infospot, infospot2 );
 
 viewer = new PANOLENS.Viewer( { container: container } );
 viewer.add( panorama );
+
+function changeImage(img) {
+  viewer.remove( panorama );
+  panorama = new PANOLENS.ImagePanorama(img);
+  panorama.add( infospot, infospot2 );
+  viewer.add( panorama );
+  viewer.setPanorama( panorama );
+}
+var lista = [
+  [],
+  ['Equirectangular-Grid-1024x512.png',10000],
+  ['equirectangular_guide.jpg',5000],
+  ['cylindrical2equirectangular.jpg',5000],
+  ['equirectangular.png',10000],
+  ['equirectangular_letreros.jpg',10000],
+];
+var ii = 2;
+function loop(){
+  changeImage(lista[ii][0]);
+  ii++;
+  if(ii>5)ii=1;
+  setTimeout(loop,lista[ii][1]);
+}
+setTimeout(loop,lista[ii][1]);
     </script>
   </body>
 </html>
