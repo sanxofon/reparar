@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+    <title>Panolens.js panorama cube</title>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #000;
+      }
+      a:link, a:visited{
+        color: #bdc3c7;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="three.min.js"></script>
+    <script src="panolens.min.js"></script>
+    <script>
+      let panorama, viewer;
+      const path = './';
+      const format = '.jpg';
+      /*panorama = new PANOLENS.CubePanorama( [
+          path + 'pax' + format, path + 'nax' + format,
+          path + 'pay' + format, path + 'nay' + format,
+          path + 'paz' + format, path + 'naz' + format
+      ] );//*/
+
+      // panorama = new PANOLENS.ImagePanorama('escenario 2-david.jpg' );
+      // panorama = new PANOLENS.ImagePanorama('escenario 2-david (1).jpg' );
+      // panorama = new PANOLENS.ImagePanorama('Equirectangular.png');
+      // panorama = new PANOLENS.ImagePanorama('Equirectangular-Grid-1024x512.png');
+      panorama = new PANOLENS.ImagePanorama('5ddbb21ed31f0f32c36d5862_1 mopP81mc2oo6scc-qQ5KlA.jpg');
+      // panorama.link( panorama2, new THREE.Vector3( -807.50, 604.88, -5000.00 ) );
+
+      viewer = new PANOLENS.Viewer();
+      viewer.add( panorama );
+    </script>
+  </body>
+</html>
