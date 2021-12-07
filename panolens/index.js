@@ -9,7 +9,7 @@ tex2 = textureLoader.load( '61-eBnYjM9L._AC_US436_QL65_.jpg' );
 //panorama = new PANOLENS.ImagePanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/equirectangular/tunnel.jpg' );
 panorama = new PANOLENS.ImagePanorama( 
   //'escenario%202-david.jpg'
-    'Equirectangular.png'                                 );
+    'equirectangular.png'                                 );
 
 // Default infospot
 infospot = new PANOLENS.Infospot( 
