@@ -2,8 +2,8 @@ var panorama, viewer, container, infospot, infospot2, textureLoader, tex1, tex2;
 
 container = document.querySelector( '#container' );
 textureLoader = new THREE.TextureLoader();
-tex1 = textureLoader.load( '61mtx+420hL._AC_US436_QL65_.jpg' );
-tex2 = textureLoader.load( '61-eBnYjM9L._AC_US436_QL65_.jpg' );
+tex1 = textureLoader.load( 'mancha-texto-esbonito.png' );
+tex2 = textureLoader.load( 'mancha-esbonito.png' );
 
 
 //panorama = new PANOLENS.ImagePanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/equirectangular/tunnel.jpg' );
@@ -14,7 +14,7 @@ panorama = new PANOLENS.ImagePanorama(
 // Default infospot
 infospot = new PANOLENS.Infospot( 
   600, 
-  "61mtx+420hL._AC_US436_QL65_.jpg"
+  "mancha-texto-esbonito.png"
 );
 
 infospot.position.set( 1000, 100, -2000 );
@@ -26,7 +26,7 @@ infospot.addEventListener( "click", function(){
 // Custom infospot
 infospot2 = new PANOLENS.Infospot( 
   600, 
-  "61mtx+420hL._AC_US436_QL65_.jpg", false
+  "mancha-texto-esbonito.png", false
 );
 
 infospot2.material.rotation = 30 * Math.PI / 180;
