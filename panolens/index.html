@@ -96,7 +96,8 @@
 
         // panorama = new PANOLENS.ImageLittlePlanet(img);
         panorama.updateTexture( new THREE.TextureLoader().load( img ) );
-        panorama.reset();;
+        panorama.reset();
+        panorama.add( infospot, infospot2 );
         
         viewer.add( panorama );
         viewer.setPanorama( panorama );
