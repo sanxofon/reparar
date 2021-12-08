@@ -20,6 +20,11 @@
     </style>
   </head>
   <body>
+    <div style="position:absolute;">
+      <span style="width:80px;height:20px;background:red;text-align:center;cursor:pointer;" onclick="loop(1)">Anterior</span>
+      <span style="width:80px;height:20px;background:red;text-align:center;cursor:pointer;" onclick="loop()">Siguiente</span><br>
+    </div>
+    <div id="txtimg" style="background:orange;cursor:pointer;position:absolute;right:0;" onclick="window.open(this.innerHTML)"></div>
     <div id="container"></div>
     <script src="three.min.js"></script>
     <script src="panolens.min.js"></script>
@@ -37,80 +42,92 @@
           'paz.jpg', 'naz.jpg'
       ] );//*/
 
-      // panorama = new PANOLENS.ImagePanorama('escenario 2-david.jpg' );
-      // panorama = new PANOLENS.ImagePanorama('escenario 2-david (1).jpg' );
-      // panorama = new PANOLENS.ImagePanorama('Equirectangular.png');
-      panorama = new PANOLENS.ImagePanorama('Equirectangular-Grid-1024x512.png');
-      // panorama = new PANOLENS.ImagePanorama('equirectangular_guide.jpg');
-      // panorama.link( panorama2, new THREE.Vector3( -807.50, 604.88, -5000.00 ) );
+      panorama = new PANOLENS.ImageLittlePlanet('Equirectangular-Grid-1024x512.png');
+      // panorama = new PANOLENS.ImagePanorama('Equirectangular-Grid-1024x512.png');
+      document.getElementById('txtimg').innerHTML = 'Equirectangular-Grid-1024x512.png';
+      
 
-// Default infospot
-var infospot = new PANOLENS.Infospot( 
-  1000, 
-  "mancha-texto-esbonito.png"
-);
+      // Default infospot
+      var infospot = new PANOLENS.Infospot( 
+        1000, 
+        "mancha-texto-esbonito.png"
+      );
 
-infospot.position.set( 1000, 100, -2000 );
-infospot.addHoverText( "Default Infospot", 100 );
-infospot.addEventListener( "click", function(){
-  this.focus();
-} );
+      infospot.position.set( 1000, 100, -2000 );
+      infospot.addHoverText( "Default Infospot", 100 );
+      infospot.addEventListener( "click", function(){
+        this.focus();
+      } );
 
-// Custom infospot
-var infospot2 = new PANOLENS.Infospot( 
-  1000, 
-  "mancha-esbonito.png", false
-);
+      // Custom infospot
+      var infospot2 = new PANOLENS.Infospot( 
+        1000, 
+        "mancha-esbonito.png", false
+      );
 
-infospot2.material.rotation = 30 * Math.PI / 180;
-infospot2.position.set( -1000, 100, -2000 );
-infospot2.addHoverText( "Custom Infospot", 80 );
-infospot2.addEventListener( "click", function(){
-  this.focus();
-} );
-infospot2.addEventListener( 'hoverenter', function( event ){
-  this.material.opacity = 0.6;
-  this.material.color.set( 0x00ff00 * Math.random() );
-  this.material.map = tex2;
-  this.scale.x *= 1.2;
-  this.scale.y *= 1.2;
-} );
-infospot2.addEventListener( 'hoverleave', function( event ){
-  this.material.opacity = 1;
-  this.material.color.set( 0xffffff );
-  this.material.map = tex1;
-  this.scale.x /= 1.2;
-  this.scale.y /= 1.2;
-} );
+      infospot2.material.rotation = 30 * Math.PI / 180;
+      infospot2.position.set( -1000, 100, -2000 );
+      infospot2.addHoverText( "Custom Infospot", 80 );
+      infospot2.addEventListener( "click", function(){
+        this.focus();
+      } );
+      infospot2.addEventListener( 'hoverenter', function( event ){
+        this.material.opacity = 0.6;
+        this.material.color.set( 0x00ff00 * Math.random() );
+        this.material.map = tex2;
+        this.scale.x *= 1.2;
+        this.scale.y *= 1.2;
+      } );
+      infospot2.addEventListener( 'hoverleave', function( event ){
+        this.material.opacity = 1;
+        this.material.color.set( 0xffffff );
+        this.material.map = tex1;
+        this.scale.x /= 1.2;
+        this.scale.y /= 1.2;
+      } );
 
-panorama.add( infospot, infospot2 );
+      // panorama.add( infospot, infospot2 );
 
-viewer = new PANOLENS.Viewer( { container: container } );
-viewer.add( panorama );
+      viewer = new PANOLENS.Viewer( { container: container } );
+      viewer.add( panorama );
 
-function changeImage(img) {
-  viewer.remove( panorama );
-  panorama = new PANOLENS.ImagePanorama(img);
-  panorama.add( infospot, infospot2 );
-  viewer.add( panorama );
-  viewer.setPanorama( panorama );
-}
-var lista = [
-  [],
-  ['Equirectangular-Grid-1024x512.png',10000],
-  ['equirectangular_guide.jpg',5000],
-  ['cylindrical2equirectangular.jpg',5000],
-  ['equirectangular.png',10000],
-  ['equirectangular_letreros.jpg',10000],
-];
-var ii = 2;
-function loop(){
-  changeImage(lista[ii][0]);
-  ii++;
-  if(ii>5)ii=1;
-  setTimeout(loop,lista[ii][1]);
-}
-setTimeout(loop,lista[ii][1]);
+      function changeImage(img) {
+        viewer.remove( panorama );
+
+        // panorama = new PANOLENS.ImageLittlePlanet(img);
+        panorama.updateTexture( new THREE.TextureLoader().load( img ) );
+        panorama.reset();;
+        
+        viewer.add( panorama );
+        viewer.setPanorama( panorama );
+      }
+      var lista = [
+        '',
+        'Equirectangular-Grid-1024x512.png',
+
+        "equirectangular_guide.jpg",
+        "cylindrical.jpg",
+        "cylindricaltoequirectangular.jpg",
+        "cylindricaltoequirectangular2.jpg",
+        "expandido.jpg",
+        "equirectangular2cylindrical.jpg",
+        "equirectangular_letreros.jpg",
+        "equirectangular.png",
+      ];
+      var ii = 1;
+      function loop(reverse=0){
+        if(reverse) {
+          ii=ii-1;
+          if(ii<1)ii=lista.length-1;
+        }else{
+          ii=ii+1;
+          if(ii>=lista.length)ii=1;
+        }
+        changeImage(lista[ii]);
+        document.getElementById('txtimg').innerHTML = lista[ii];
+        // setTimeout(loop,5000);
+      }
+      // setTimeout(loop,3000);
     </script>
   </body>
 </html>
