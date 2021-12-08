@@ -42,8 +42,8 @@
           'paz.jpg', 'naz.jpg'
       ] );//*/
 
-      panorama = new PANOLENS.ImageLittlePlanet('Equirectangular-Grid-1024x512.png');
-      // panorama = new PANOLENS.ImagePanorama('Equirectangular-Grid-1024x512.png');
+      // panorama = new PANOLENS.ImageLittlePlanet('Equirectangular-Grid-1024x512.png');
+      panorama = new PANOLENS.ImagePanorama('Equirectangular-Grid-1024x512.png');
       document.getElementById('txtimg').innerHTML = 'Equirectangular-Grid-1024x512.png';
       
 
@@ -86,7 +86,7 @@
         this.scale.y /= 1.2;
       } );
 
-      // panorama.add( infospot, infospot2 );
+      panorama.add( infospot, infospot2 );
 
       viewer = new PANOLENS.Viewer( { container: container } );
       viewer.add( panorama );
