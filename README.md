@@ -1,5 +1,9 @@
 ##  REPARAR, extendamos la vida útil de las cosas
 
+El proyecto ahora vive acá:
+ - [http://reparar.com.mx/](http://reparar.com.mx/)
+
+
 **Descripción:** Imágenes panorámicas 360 interactivas en Web (PHP/HTML/JS/CSS).
 
 **Requerimientos desde diseño:** Imagen de fondo y elementos interactivos dentro de cada escena (imagen/audio/video/enlaces)
